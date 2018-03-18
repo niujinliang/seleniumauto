@@ -29,7 +29,7 @@ public class HomePageHelper {
 //        seleniumUtil.waitForElementToLoad(timeOut, FramePage.FP_FRAME_NAVBAR);
 //        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_NAVBAR);//再进入body frame的子frame:navbar frame中
         logger.info("开始等待首页元素加载");
-        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_FLIGHTS);
+        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_TEXT_USERNAME);
 //        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_ITINERARY);
 //        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_HOME);
 //        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_SIGNOFF);
