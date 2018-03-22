@@ -20,5 +20,6 @@ public class LoginPage {
     /**点击登录按钮*/
     public static final By ClickDengLu = By.xpath("/html/body/div[1]/div[1]/div/span[2]/a[2]");
 
+
 }
 

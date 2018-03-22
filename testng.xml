@@ -24,6 +24,11 @@
             <package name="com.demo.test.testcases.login" />
         </packages>
     </test>
+    <!--<test name="Login" preserve-order="true">-->
+        <!--<packages>-->
+            <!--<package name="com.demo.test.testcases.testcookie" />-->
+        <!--</packages>-->
+    <!--</test>-->
     <!--<test name="Home" preserve-order="true">-->
         <!--<packages>-->
             <!--<package name="com.demo.test.testcases.home" />-->

@@ -451,7 +451,8 @@ public class SeleniumUtil {
         Set<Cookie> cookies = driver.manage().getCookies();
         for (Cookie c : cookies) {
             System.out.println(c.getName() + "->" + c.getValue());
-            if (c.getName().equals("logisticSessionid")) {
+         //   if (c.getName().equals("logisticSessionid")) {
+               if(c.getName().contains("pin")){
                 Cookie cook = new Cookie(c.getName(), c.getValue());
                 driver.manage().addCookie(cook);
                 System.out.println(c.getName() + "->" + c.getValue());

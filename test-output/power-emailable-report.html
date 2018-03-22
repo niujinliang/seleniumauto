@@ -24,12 +24,12 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Login</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">33.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Login</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">51.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th>Authors</th><th># of<br/>Scenarios</th><th>Running Counts</th><th>Parameters</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">Login &#8212; passed</th></tr>
-<tr class="passedodd"><td>com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test</td><td><a href="#m1156536588"><b>loginSuccessFunction</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td>{PASSWORD=niu123456, USERNAME=testnjl001, title=您好，testnjl001   [退出]} </td><td>1521383946267</td><td class="numi">17952</td></tr>
+<tr id="t1"><th colspan="5">Login &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test</td><td><a href="#m1156536588"><b>loginSuccessFunction</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td>{PASSWORD=niu123456, USERNAME=testnjl001, title=您好，testnjl001   [退出]} </td><td>1521689711330</td><td class="numi">27793</td></tr>
 </table>
 <h1>Login</h1>
 <h2 id="m1156536588" name="m1156536588" >com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test:loginSuccessFunction</h2>
@@ -37,6 +37,39 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>{PASSWORD=niu123456, USERNAME=testnjl001, title=您好，testnjl001   [退出]}</td>
 </tr>
+<tr><td>
+<h3>Test Messages</h3>
+result/screenshot/2018_03_22_11_35_39_loginSuccessFunction.jpg<br/>
+<img src="../../result/screenshot/2018_03_22_11_35_39_loginSuccessFunction.jpg"/><br/>
+<h3>Failure</h3>
+<div class="stacktrace">org.openqa.selenium.NoAlertPresentException: no alert open
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;ZB-PF0XHG7S&apos;, ip: &apos;10.0.45.131&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\NIUJIN~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: d9b46435170d94ae53765c78fac06542
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:987)
+	at com.demo.test.utils.SeleniumUtil.switchToPromptedAlertAfterWait(SeleniumUtil.java:232)
+	at com.demo.test.pageshelper.HomePageHelper.alert(HomePageHelper.java:87)
+	at com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test.loginSuccessFunction(LoginPage_001_LoginSuccessFunction_Test.java:48)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames</div>
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

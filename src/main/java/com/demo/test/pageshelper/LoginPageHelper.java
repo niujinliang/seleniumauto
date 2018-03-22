@@ -36,10 +36,14 @@ public class LoginPageHelper {
      * @author
      * @description 点击登录
      * */
-
+    //点击登录按钮
     public static void clickDengLu(SeleniumUtil seleniumUtil,int timeOut){
         seleniumUtil.click(LoginPage.ClickDengLu);
-
+    }
+    //增加cookie
+    public static void addCookie(SeleniumUtil seleniumUtil,int timeOut) {
+        seleniumUtil.addCookies(14);
+        seleniumUtil.refresh();
     }
 
 
